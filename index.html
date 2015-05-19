@@ -19,7 +19,7 @@
       return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
     window.onload = function(){
-      if (getParameterByName('domain') !== 'undefined'){var domain = getParameterByName('domain');var status = getParameterByName('status');document.getElementById('noticeContainer').innerHTML = '<span style="font-weight:bold">'+ domain + '</span> seems down right now<br>Try again later or pick another site (Error '+status+')';}
+      if (getParameterByName('domain') !== 'undefined'){var domain = getParameterByName('domain');var status = getParameterByName('status');document.getElementById('noticeContainer').innerHTML = '<span style="font-weight:bold">'+ domain + '</span> seems down right now<br>Try again later or pick another site (Error '+status+')';console.log(domain+' Error - Status: '+status);}
     }
   </script>
   <style type="text/css">
