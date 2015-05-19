@@ -20,7 +20,7 @@
     }
     window.onload = function(){
       var domain = getParameterByName('domain');
-      if (domain){var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').innerHTML = '<span style="font-weight:bold"><a href="'+ domain + request+ '">'+domain+'</a></span> seems down right now<br><a href="'+domain+request+'" title="Try URL again">Try again</a> later or pick another site (Error '+status+')';console.log(domain+' Error - Status: '+status);}
+      if (domain){var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').innerHTML = '<span style="font-weight:bold">'+domain+'</span> seems down right now<br><a href="'+domain+request+'" title="Try URL again">Try again</a> or pick another site (Error '+status+')';}
     }
   </script>
   <style type="text/css">
