@@ -1,141 +1,103 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Unblocked - Access your favourite blocked sites</title>
-  <meta name="description" content="Is you favourite site blocked? Try a proxy on Unblocked">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="favicon.ico" rel="icon" type="image/x-icon" />
-  <script type="text/javascript">
-    if(top != self) top.location.replace(location);
-  </script>
-  <script type="text/javascript">
-    function openform() {document.getElementById('feedbackForm').style.display='block';document.getElementById('feedbackFrame').src='https://s.proxybay.co/index2.php';document.getElementById('feedbackBtn').style.display='none';}
-    function closeform(){document.getElementById('feedbackForm').style.display='none';document.getElementById('feedbackFrame').src='';document.getElementById('feedbackBtn').style.display='block';}
-    function getParameterByName(name) {
-      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-      results = regex.exec(location.search);
-      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
-    window.onload = function(){
-      var domain = getParameterByName('domain');
-      if (domain){var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').innerHTML = '<span style="font-weight:bold">'+domain+'</span> seems down right now<br><a href="'+domain+request+'" title="Try URL again">Try again</a> or pick another site (Error '+status+')';}
-    }
-  </script>
-  <style type="text/css">
-    body {font-family: "Courier New", Courier, monospace;background-color:#ccc;color:#000;margin:0px;}
-    #feedbackForm {display:none;position:fixed; bottom:0; right:0;background-color:#eee;}
-    #footer {margin-top: 20px;text-align: center;}
-    #footer a {color: #000;}
-    #closeBtn {color: #000; float: right; margin-right: 5px; margin-top: 5px; font-size: 20px; text-decoration: none; padding: 0px 3px 0px 3px; }
-  .feedback{ position: fixed; bottom: -2px; right: 25px; background-color:#ededed; border:2px solid #a6a6a6; display:inline-block; color:#777777; font-family:Arial; font-size:16px; font-weight:bold; height:36px; line-height:36px; width:258px; text-decoration:none; text-align:center; text-shadow:0px 0px 0px #ffffff; }
-  .feedback:hover { background-color:#dfdfdf; }
-  header {text-align:center; padding-top:10px; z-index:10;}
-  .tbl a {cursor:url(img/cursor.gif),auto;color:#fff;} .tbl a:link {text-decoration:none;} .tbl a:visited {text-decoration:none;} .tbl a:hover {text-decoration:underline;} .tbl a:active {text-decoration:underline;}
-  .pattern { background: url(img/pattern.png); position: fixed; height: 100%; width: 100%; top: 0; z-index: -2; }
-  .tbl {float:left; padding: 5px 20px 5px 20px;}
-  .tbl tr td {text-align:center;padding:3px;font-size:17px;}
-  #maintbl {margin: 0 auto;}
-  .tbl table { overflow:hidden; border:1px solid #d3d3d3; background:#fefefe; width: 250px; padding-bottom: 15px; margin:5% auto 0; -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); background: url(img/floatbox_bg.png); border: 3px solid #81a7b2; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; -moz-background-clip: padding-box; -webkit-background-clip: padding-box; background-clip: padding-box; }
-  .new {padding-left:5px;max-height:18px;vertical-align: bottom;width:24px;height:24px;}
-  @media only screen and (max-width: 520px){
-    #maintbl{text-align:center;width:100%}
-    .tbl {display:inline-block;width:100%;float:none;padding: 0;}
-    header img{width:100%;height:100px;}}
-  #noticeContainer {font-size:14px;text-align:center;}
-</style>
-</head>
-<body>
-<div id="wrapper">
-  <header>
-    <img width="605px" height="125px" alt="Unblocked" src="img/logo.png">
-  </header>
-  <content>
-  <!--<div style="text-align:center;"><p style="margin: 0px; font-size: 14px;"><span style="color:red;font-weight:bold;">Notice: </span>If a site isn't loading correctly, clear your browser cache: <a target="_blank" href="http://www.wikihow.com/Clear-Your-Browser%27s-Cache">Instructions</a></p></div>-->
-    <div style="text-align:center" id="noticeContainer"></div>
-    <table id="maintbl">
-      <td class="tbl">
-        <table>
-          <tr><th><img src="img/torrents.png" alt="Torrent sites" width="184px" height="45px"></th></tr>
-          <tr><td><a href="https://kickass.unblocked.sx">KickAssTorrents</a><img class="new" src="img/new.png"></td></tr>
-          <tr><td><a href="https://proxybay.co">ThePirateBay</a></td></tr>
-          <tr><td><a href="https://Yify.unblocked.pw">Yify</a></td></tr>
-          <tr><td><a href="https://Torrenthound.unblocked.pw">Torrenthound</a></td></tr>
-          <tr><td><a href="https://Torrentcrazy.unblocked.pw">Torrentcrazy</a></td></tr>
-          <tr><td><a href="https://h33t.unblocked.pw">H33t</a></td></tr>
-          <tr><td><a href="https://extratorrent.unblocked.pw/">Extratorrent</a></td></tr>
-          <tr><td><a href="https://torrentbutler.unblocked.pw/">Torrentbutler</a></td></tr>
-          <tr><td><a href="https://rarbg.unblocked.pw/index8.php">Rarbg</a></td></tr>
-  <!-- --><tr><td><a href="https://torrentz-proxy.com/">Torrentz</a></td></tr>
-          <tr><td><a href="https://Bitsnoop.unblocked.pw">Bitsnoop</a></td></tr>
-          <tr><td><a href="https://limetorrents.unblocked.pw">Limetorrents</a></td></tr>
-          <!-- <tr><td><a href="https://eztv.unblocked.pw/">EZTV</a></td></tr> -->
-          <tr><td><a href="https://Torrentreactor.unblocked.pw">Torrentreactor</a></td></tr>
-          <tr><td><a href="https://axxomovies.unblocked.pw/">AxxoMovies</a></td></tr>
-          <tr><td><a href="https://dl4all.unblocked.pw">Download4all</a></td></tr>
-  <!-- --><tr><td><a href="https://www.torrentday.com/">TorrentDay</a></td></tr>
-          <tr><td><a href="https://btdigg.unblocked.pw">Btdigg</a></td></tr>
-          <tr><td><a href="https://isohunt.unblocked.pw">IsoHunt</a></td></tr>
-          <tr><td><a href="https://seedpeer.unblocked.pw">Seedpeer</a></td></tr>
-          <tr><td><a href="https://torlock.unblocked.pw">Torlock</a></td></tr>
-          <tr><td><a href="https://1337x.unblocked.pw">1337x</a></td></tr>
-  <!-- --><tr><td><a href="https://iptorrents.us/">IPTorrents</a></td></tr>
-  <!-- --><tr><td><a href="https://www.demonoid.pw/">Demonoid</a></td></tr>
-          <tr><td><a href="https://seventorrents.unblocked.pw/Movies/Default.aspx">SevenTorrents</a></td></tr>
-          <tr><td><a href="https://torrentbit.unblocked.pw">Torrentbit</a></td></tr>
-          <tr><td><a href="https://torrentfunk.unblocked.pw">Torrentfunk</a></td></tr>
-          <tr><td><a href="https://Monova.unblocked.pw">Monova</a></td></tr>
-          <tr><td><a href="https://Torrentdownloads.unblocked.pw">Torrentdownloads</a></td></tr>
+  <head>
+    <meta charset="utf-8" />
+    <title>Unblocked - Access your favourite blocked sites</title>
+    <meta name="description" content="Is you favourite site blocked? Try a proxy on Unblocked">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <img width="605px" height="125px" alt="Unblocked" src="img/logo.png">
+      </header>
+      <content>
+        <!--<div style="text-align:center;"><p style="margin: 0px; font-size: 14px;"><span style="color:red;font-weight:bold;">Notice: </span>If a site isn't loading correctly, clear your browser cache: <a target="_blank" href="http://www.wikihow.com/Clear-Your-Browser%27s-Cache">Instructions</a></p></div>-->
+        <div style="text-align:center" id="noticeContainer"></div>
+        <table id="maintbl">
+          <td class="tbl">
+            <table>
+              <tr><th><img src="img/torrents.png" alt="Torrent sites" width="184px" height="45px"></th></tr>
+              <tr><td><a href="https://kickass.unblocked.sx">KickAssTorrents</a></td></tr>
+              <tr><td><a href="https://proxybay.co">ThePirateBay</a></td></tr>
+              <tr><td><a href="https://Yify.unblocked.pw">Yify</a></td></tr>
+              <tr><td><a href="https://Torrenthound.unblocked.pw">Torrenthound</a></td></tr>
+              <tr><td><a href="https://Torrentcrazy.unblocked.pw">Torrentcrazy</a></td></tr>
+              <tr><td><a href="https://h33t.unblocked.pw">H33t</a></td></tr>
+              <tr><td><a href="https://extratorrent.unblocked.pw/">Extratorrent</a></td></tr>
+              <tr><td><a href="https://torrentbutler.unblocked.pw/">Torrentbutler</a></td></tr>
+              <tr><td><a href="https://rarbg.unblocked.pw/index8.php">Rarbg</a></td></tr>
+      <!-- --><tr><td><a href="https://torrentz-proxy.com/">Torrentz</a></td></tr>
+              <tr><td><a href="https://Bitsnoop.unblocked.pw">Bitsnoop</a></td></tr>
+              <tr><td><a href="https://limetorrents.unblocked.pw">Limetorrents</a></td></tr>
+              <!-- <tr><td><a href="https://eztv.unblocked.pw/">EZTV</a></td></tr> -->
+              <tr><td><a href="https://Torrentreactor.unblocked.pw">Torrentreactor</a></td></tr>
+              <tr><td><a href="https://axxomovies.unblocked.pw/">AxxoMovies</a></td></tr>
+              <tr><td><a href="https://dl4all.unblocked.pw">Download4all</a></td></tr>
+      <!-- --><tr><td><a href="https://www.torrentday.com/">TorrentDay</a></td></tr>
+              <tr><td><a href="https://btdigg.unblocked.pw">Btdigg</a></td></tr>
+              <tr><td><a href="https://isohunt.unblocked.pw">IsoHunt</a></td></tr>
+              <tr><td><a href="https://seedpeer.unblocked.pw">Seedpeer</a></td></tr>
+              <tr><td><a href="https://torlock.unblocked.pw">Torlock</a></td></tr>
+              <tr><td><a href="https://1337x.unblocked.pw">1337x</a></td></tr>
+      <!-- --><tr><td><a href="https://iptorrents.us/">IPTorrents</a></td></tr>
+      <!-- --><tr><td><a href="https://www.demonoid.pw/">Demonoid</a></td></tr>
+              <tr><td><a href="https://seventorrents.unblocked.pw/Movies/Default.aspx">SevenTorrents</a></td></tr>
+              <tr><td><a href="https://torrentbit.unblocked.pw">Torrentbit</a></td></tr>
+              <tr><td><a href="https://torrentfunk.unblocked.pw">Torrentfunk</a></td></tr>
+              <tr><td><a href="https://Monova.unblocked.pw">Monova</a></td></tr>
+              <tr><td><a href="https://Torrentdownloads.unblocked.pw">Torrentdownloads</a></td></tr>
+            </table>
+          </td>
+          <td class="tbl">
+            <table>
+              <tr><th><img src="img/direct.png" alt="Direct Download Sites" width="218px" height="45px"></th></tr>
+              <tr><td><a href="https://softarchive.unblocked.pw">SoftArchive</a></td></tr>
+              <tr><td><a href="https://megasearch.unblocked.pw">MegaSearch</a></td></tr>
+              <tr><td><a href="https://rnbxclusive.unblocked.pw">RnBXclusive</a></td></tr>
+              <tr><td><a href="https://emp3world.unblocked.pw">emp3world</a></td></tr>
+              <tr><td><a href="https://Mp3skull.unblocked.pw">Mp3skull</a></td></tr>
+              <tr><td><a href="https://Newalbumreleases.unblocked.pw">Newalbumreleases</a></td></tr>
+              <tr><td><a href="https://Beemp3.unblocked.pw">Beemp3</a></td></tr>
+              <tr><td><a href="https://Mp3raid.unblocked.pw">MP3raid</a></td></tr>
+              <tr><td><a href="https://myfreemp3.unblocked.pw">MyFreeMP3</a></td></tr>
+              <tr><td><a href="https://Mp3juices.unblocked.pw">MP3Juices</a></td></tr>
+              <tr><td><a href="https://Mp3lemon.unblocked.pw">MP3Lemon</a></td></tr>
+              <tr><td><a href="https://Filetram.unblocked.pw">Filetram</a></td></tr>
+            </table>
+          </td>
+          <td class="tbl">
+            <table>
+              <tr><th><img src="img/streaming.png" alt="Streaming Sites" width="208px" height="45px"></th></tr>
+              <tr><td><a href="https://Primewire.unblocked.sx">Primewire</a></td></tr>
+              <tr><td><a href="http://watchtvseries.my.to">WatchTVSeries</a></td></tr>
+              <tr><td><a href="https://putlocker.unblocked.pw">PutLocker</a></td></tr>
+              <tr><td><a href="http://solarmovie.my.to">SolarMovie</a></td></tr>
+              <tr><td><a href="http://FirstRowSports.my.to">FirstRowSports</a></td></tr>
+              <tr><td><a href="http://rojadirecta.my.to">RojaDirecta</a></td></tr>
+              <tr><td><a href="https://watchfree.unblocked.pw">Watchfree</a></td></tr>
+              <tr><td><a href="https://Watchfreemovies.unblocked.pw">Watchfreemovies</a></td></tr>
+              <tr><td><a href="http://projectfreetv.my.to">ProjectFreeTV</a></td></tr>
+              <tr><td><a href="https://iwatchonline.unblocked.pw">iWatchOnline</a></td></tr>
+              <tr><td><a href="https://movie25.unblocked.pw">Movie25</a></td></tr>
+              <tr><td><a href="https://icefilms.unblocked.pw/">IceFilms</a></td></tr>
+              <tr><td><a href="https://Movie4K.unblocked.pw">Movie4K</a></td></tr>
+              <tr><td><a href="http://tubeplus.my.to">Tubeplus</a></td></tr>
+              <tr><td><a href="https://popcorntime.unblocked.pw">PopcornTime</a></td></tr>
+              <tr><td><a href="https://isoplex.unblocked.pw/?lang=en&refname=&refurl=">IsoPlex</a></td></tr>
+              <tr><td><a href="https://apnaview.unblocked.pw">ApnaView</a></td></tr>
+              <tr><td><a href="https://tnaflix.unblocked.pw">TNAflix<span style="color:red">(xxx)</span></a></td></tr>
+            </table>
+          </td>
         </table>
-      </td>
-      <td class="tbl">
-        <table>
-          <tr><th><img src="img/direct.png" alt="Direct Download Sites" width="218px" height="45px"></th></tr>
-          <tr><td><a href="https://softarchive.unblocked.pw">SoftArchive</a></td></tr>
-          <tr><td><a href="https://megasearch.unblocked.pw">MegaSearch</a></td></tr>
-          <tr><td><a href="https://rnbxclusive.unblocked.pw">RnBXclusive</a></td></tr>
-          <tr><td><a href="https://emp3world.unblocked.pw">emp3world</a></td></tr>
-          <tr><td><a href="https://Mp3skull.unblocked.pw">Mp3skull</a></td></tr>
-          <tr><td><a href="https://Newalbumreleases.unblocked.pw">Newalbumreleases</a></td></tr>
-          <tr><td><a href="https://Beemp3.unblocked.pw">Beemp3</a></td></tr>
-          <tr><td><a href="https://Mp3raid.unblocked.pw">MP3raid</a></td></tr>
-          <tr><td><a href="https://myfreemp3.unblocked.pw">MyFreeMP3</a></td></tr>
-          <tr><td><a href="https://Mp3juices.unblocked.pw">MP3Juices</a></td></tr>
-          <tr><td><a href="https://Mp3lemon.unblocked.pw">MP3Lemon</a></td></tr>
-          <tr><td><a href="https://Filetram.unblocked.pw">Filetram</a></td></tr>
-        </table>
-      </td>
-      <td class="tbl">
-        <table>
-          <tr><th><img src="img/streaming.png" alt="Streaming Sites" width="208px" height="45px"></th></tr>
-          <tr><td><a href="https://Primewire.unblocked.sx">Primewire</a></td></tr>
-          <tr><td><a href="http://watchtvseries.my.to">WatchTVSeries</a></td></tr>
-          <tr><td><a href="https://putlocker.unblocked.pw">PutLocker</a></td></tr>
-          <tr><td><a href="http://solarmovie.my.to">SolarMovie</a></td></tr>
-          <tr><td><a href="http://FirstRowSports.my.to">FirstRowSports</a></td></tr>
-          <tr><td><a href="http://rojadirecta.my.to">RojaDirecta</a><img class="new" src="img/new.png"></td></tr>
-          <tr><td><a href="https://watchfree.unblocked.pw">Watchfree</a></td></tr>
-          <tr><td><a href="https://Watchfreemovies.unblocked.pw">Watchfreemovies</a></td></tr>
-          <tr><td><a href="http://projectfreetv.my.to">ProjectFreeTV</a></td></tr>
-          <tr><td><a href="https://iwatchonline.unblocked.pw">iWatchOnline</a></td></tr>
-          <tr><td><a href="https://movie25.unblocked.pw">Movie25</a></td></tr>
-          <tr><td><a href="https://icefilms.unblocked.pw/">IceFilms</a></td></tr>
-          <tr><td><a href="https://Movie4K.unblocked.pw">Movie4K</a></td></tr>
-          <tr><td><a href="http://tubeplus.my.to">Tubeplus</a></td></tr>
-          <tr><td><a href="https://popcorntime.unblocked.pw">PopcornTime</a></td></tr>
-          <tr><td><a href="https://isoplex.unblocked.pw/?lang=en&refname=&refurl=">IsoPlex</a></td></tr>
-          <tr><td><a href="https://apnaview.unblocked.pw">ApnaView</a></td></tr>
-          <tr><td><a href="https://tnaflix.unblocked.pw">TNAflix<span style="color:red">(xxx)</span></a></td></tr>
-        </table>
-      </td>
-    </table>
-      <div class="pattern"></div>
-    </content>
-    <div id="footer" style="margin-bottom:20px;margin-top: 20px;text-align: center; "><a href="https://unblocked-pw.github.io/">Mirror on Github</a> | <a href="https://proxybay.co">The Proxy Bay</a> | <a href="http://twitter.com/thepirateproxy">Twitter</a></div>
-  </div>
-
-<a id="feedbackBtn" class="feedback" onclick="openform()" href="#"><i></i>Feedback / Report a problem</a>
-<div id="feedbackForm"><a href="#" id="closeBtn" onclick="closeform()">X</a><br><iframe frameborder=0 scrolling=0 width="400px" height="500px" id="feedbackFrame" src=""></iframe></div>
-</body>
+        <div class="pattern"></div>
+      </content>
+      <div id="footer" style="margin-bottom:20px;margin-top: 20px;text-align: center; "><a href="https://unblocked-pw.github.io/">Mirror on Github</a> | <a href="https://proxybay.co">The Proxy Bay</a> | <a href="http://twitter.com/thepirateproxy">Twitter</a></div>
+    </div>
+      <a id="feedbackBtn" class="feedback" onclick="openform()" href="#"><i></i>Feedback / Report a problem</a>
+      <div id="feedbackForm"><a href="#" id="closeBtn" onclick="closeform()">X</a><br><iframe frameborder=0 scrolling=0 width="400px" height="500px" id="feedbackFrame" src=""></iframe></div>
+  </body>
 </html>
