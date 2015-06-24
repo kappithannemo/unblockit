@@ -1,6 +1,6 @@
 if(top != self) top.location.replace(location);
 function openform() {document.getElementById('feedbackForm').style.display='block';document.getElementById('feedbackFrame').src='https://s.proxybay.co/index2.php';document.getElementById('feedbackBtn').style.display='none';}
-function closeform(){document.getElementById('feedbackForm').style.display='none';document.getElementById('feedbackFrame').src='';document.getElementById('feedbackBtn').style.display='block';}
+function closeform(){document.getElementById('feedbackForm').style.display='none';document.getElementById('feedbackBtn').style.display='block';}
 function getParameterByName(name) {
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
   var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
