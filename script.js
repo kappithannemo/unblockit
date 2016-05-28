@@ -9,5 +9,5 @@ function getParameterByName(name) {
 }
 window.onload = function(){
   var domain = getParameterByName('domain');
-  if (domain){if(domain.match('unblocked')){var domain = domain.replace('http','https')}var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').innerHTML = '<span style="font-weight:bold">'+domain+'</span> seems to be down right now<br><a href="'+domain+request+'" title="Try URL again">Click here</a> to try again or pick another site (Error '+status+')';}
+  if (domain){if(domain.match('unblocked')){var domain = domain.replace('http','https')}var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').innerHTML = '<span style="color: red;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down right now<br><a href="'+domain+request+'" title="Try URL again">Click here</a> to try again or pick another site (Error '+status+')';}
 }
