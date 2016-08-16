@@ -1,5 +1,5 @@
 if(top != self) top.location.replace(location);
-function openform() {document.getElementById('feedbackForm').style.display='block';document.getElementById('feedbackFrame').src='https://s.proxybay.tv/index2.php';document.getElementById('feedbackBtn').style.display='none';}
+function openform() {document.getElementById('feedbackForm').style.display='block';document.getElementById('feedbackFrame').src='https://s.proxybay.one/index2.php';document.getElementById('feedbackBtn').style.display='none';}
 function closeform(){document.getElementById('feedbackForm').style.display='none';document.getElementById('feedbackBtn').style.display='block';}
 function getParameterByName(name) {
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
