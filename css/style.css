@@ -25,6 +25,8 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 }
 .alert ul {margin:0;list-style-position: inside;}
 .alert a {text-decoration:underline}
+#quickMenu {width:40%;padding-bottom:10px;margin-top:0px;padding-left:5px;padding-right:5px;}
+#quickMenu p {margin:0}
 .footer {margin-top: 80px;font-size:18px}
 .footer a {color:#000;}
 .pattern { background: url(/img/pattern.png); position: fixed; height: 100%; width: 100%; top: 0; z-index: -2; }
@@ -37,16 +39,19 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 .feedback{ position: fixed; bottom: -2px; right: 25px; background-color:#ededed; border:2px solid #a6a6a6; display:inline-block; color:#777777; font-family:Arial; font-size:16px; font-weight:bold; height:36px; line-height:36px; width:258px; text-decoration:none; text-align:center; text-shadow:0px 0px 0px #ffffff; }
 .feedback:hover { background-color:#dfdfdf; }
 #closeBtn {color: #000; float: right; margin-right: 5px; margin-top: 5px; font-size: 20px; text-decoration: none; padding: 0px 3px 0px 3px; }
+@media (min-width: 991px) and (max-width: 1200px) {
+  #quickMenu{width:50%;}
+}
 @media (min-width: 768px) and (max-width: 991px) {
+  #quickMenu{width:60%;}
   .container { width: 800px; padding:0; }
   .btn {font-size:12px}
   .col-md-3{ float: left; }
-  .col-md-3 {
-    width: 25%;
-  }
+  .col-md-3 { width: 25%; }
 }
-@media (min-width: 320px) and (max-width: 991px) {
-  .alert{display:none}
+@media (min-width: 320px) and (max-width: 768px) {
+  #updates{display:none}
+  #quickMenu{width:80%}
   h4 {font-size:18px}
   h4 img {width:18px;height:18px}
 }
