@@ -47,6 +47,6 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 }
 @media (min-width: 320px) and (max-width: 991px) {
   .alert{display:none}
-  h4 {text-size:18px}
+  h4 {font-size:18px}
   h4 img {width:18px;height:18px}
 }
