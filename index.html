@@ -32,14 +32,14 @@
       }
       window.onload = function(){
       var domain = getParameterByName('domain');
-      if (domain){if(domain.match('unblocked')){var domain = domain.replace('http','https')}var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').innerHTML = '<div class="error-img" style="float: left;"><img src="/img/error.png" style="display: block;"></div><div class="error-content"><span style="color: red;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down right now<br><a href="'+domain+request+'" title="Try URL again">Click here</a> to try again or pick another site (Error '+status+')</div>';}
+      if (domain){if(domain.match('unblocked')){var domain = domain.replace('http','https')}var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').innerHTML = '<div class="error-img" style="float: left;"><img src="/img/error.png" style="display: block;"></div><div class="error-content"><span style="color: red;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><a href="'+domain+request+'" title="Try URL again">Click here</a> to try again or pick another site<br>(Error '+status+')</div>';}
       }
     </script>
   </head>
   <body>
     <div class="container">
       <div class="header"><center><img width="627px" height="126px" class="img-responsive" alt="Unblocked" src="img/logo.png"></center>  </div>
-      <div id="noticeContainer" style="margin: 0 auto;overflow: auto;font-size: 17px;width: 60%;padding-top: 20px;padding-bottom: 20px;"></div>
+      <div id="noticeContainer" style="margin: 0 auto;overflow: auto;font-size: 17px;width: 65%;padding-top: 20px;padding-bottom: 20px;"></div>
       <div id="socialDiv">
         <div style="width:100px" class="social">
         <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Funblocked.bet&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width: 100px; height:35px;" allowTransparency="true"></iframe>
