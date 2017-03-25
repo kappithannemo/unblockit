@@ -10,6 +10,9 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 .btn:hover{color:#fff;background-color:#666666;}
 .btn:active{color:#000;}
 .btn:focus{color:#000;background-color:#ccc;outline: 0;}
+.btn-new {background-color: #337ab7;}
+.btn-new:hover {color:#fff;background-color:#5b94c5;}
+.btn-new:focus{color:#fff;background-color:#5b94c5;outline: 0;}
 .header img {margin-top:20px;}
 .alert {
   margin: 0 auto;
