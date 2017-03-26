@@ -46,9 +46,11 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 }
 @media (min-width: 991px) and (max-width: 1199px) {
   #quickMenu{width:42%;}
+  #noticeContainer{width:75%}
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #quickMenu{width:49%;}
+  #noticeContainer{width:85%}
   .container { width: 800px; padding:0; }
   .btn {font-size:12px}
   .col-md-3{ float: left; }
@@ -57,6 +59,7 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 @media (min-width: 320px) and (max-width: 768px) {
   #updates{display:none}
   #quickMenu{width:56%}
+  #noticeContainer{width:100%}
   h4 {font-size:18px}
   h4 img {width:18px;height:18px}
 }
