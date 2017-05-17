@@ -32,7 +32,7 @@
       }
       window.onload = function(){
       var domain = getParameterByName('domain');
-      if (domain){if(domain.match('extratorrrent')){document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div id="etnotice"><h2>Extratorrent has closed down 😔</h2>Try a different site below<br>Read more about the closure <a href="https://torrentfreak.com/extratorrent-shuts-down-for-good-170517/" title="Extratorrent shuts down" target="_blank">here</a>.</div>'};}
+      if (domain){if(domain.match('extratorrent')){document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div id="etnotice"><h2>Extratorrent has closed down 😔</h2>Try a different site below<br>Read more about the closure <a href="https://torrentfreak.com/extratorrent-shuts-down-for-good-170517/" title="Extratorrent shuts down" target="_blank">here</a>.</div>'};}
       if (domain){if(domain.match('unblocked')&&!domain.match('extratorrent')||domain.match('pirateproxy')){var domain = domain.replace('http','https')}var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="error-img" style="float: left;"><img src="/img/error.png" style="display: block;"></div><div class="error-content"><span style="color: red;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site<br>(Error '+status+')</div>';}
       }
     </script>
