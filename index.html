@@ -25,15 +25,15 @@
       function openform() {document.getElementById('feedbackForm').style.display='block';document.getElementById('feedbackFrame').src='https://s.proxybay.one/index2.php';document.getElementById('feedbackBtn').style.display='none';}
       function closeform(){document.getElementById('feedbackForm').style.display='none';document.getElementById('feedbackBtn').style.display='block';}
       function getParameterByName(name) {
-      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-      results = regex.exec(location.search);
-      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
       }
       window.onload = function(){
-      var domain = getParameterByName('domain');
-      if (domain){if(domain.match('extratorrent')){document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div id="etnotice"><h2>Extratorrent has closed down 😔</h2>There are still many sites available below<br>Read more about the closure <a href="https://torrentfreak.com/extratorrent-shuts-down-for-good-170517/" title="Extratorrent shuts down" target="_blank">here</a>.</div>'};}
-      else if (domain){if(domain.match('unblocked')&&!domain.match('extratorrent')||domain.match('pirateproxy')){var domain = domain.replace('http','https')}var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="error-img" style="float: left;"><img src="/img/error.png" style="display: block;"></div><div class="error-content"><span style="color: red;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site<br>(Error '+status+')</div>';}
+        var domain = getParameterByName('domain');
+        if (domain){if(domain.match('extratorrent')){document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div id="etnotice"><h2>Extratorrent has closed down 😔</h2>There are still many sites available below<br>Read more about the closure <a href="https://torrentfreak.com/extratorrent-shuts-down-for-good-170517/" title="Extratorrent shuts down" target="_blank">here</a>.</div>'}
+        else if (domain){if(domain.match('unblocked')&&!domain.match('extratorrent')||domain.match('pirateproxy')){var domain = domain.replace('http','https')}var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="error-img" style="float: left;"><img src="/img/error.png" style="display: block;"></div><div class="error-content"><span style="color: red;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site<br>(Error '+status+')</div>';}}
       }
     </script>
   </head>
@@ -241,7 +241,7 @@
 
         <h4 id="adult"><span style="color:red;font-size:14px;vertical-align: middle;">xxx</span> Adult <span style="color:red;font-size:14px">xxx</span></h4>
         <div class="row">
-          <!--<div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kingextreme.unblocked.cam"><img src="ico/kingextreme.ico">&nbsp;KingExtreme</a></div>-->
+          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kingextreme.unblocked.cam"><img src="ico/kingextreme.ico">&nbsp;KingExtreme</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hdporn.unblocked.cam"><img src="ico/hdporn.ico">&nbsp;HDPorn</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://tnaflix.unblocked.cam"><img src="ico/tnaflix.ico">&nbsp;TNAflix</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://mporno.unblckd.top"><img src="ico/mporno.ico">&nbsp;MPorno</a></div>
