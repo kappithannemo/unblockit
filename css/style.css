@@ -34,7 +34,7 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 .pattern { background: url(/img/pattern.png); position: fixed; height: 100%; width: 100%; top: 0; z-index: -2; }
 #socialDiv{width: 173px; height:30px; margin: 0 auto;line-height:0px;margin-top:10px;}
 .social{float: left;}
-#noticeContainer {margin: 0 auto;overflow: auto;font-size: 17px;width: 65%;padding-top: 20px;padding-bottom: 20px;font-size:16px;text-align:center;display:none;}
+#noticeContainer {margin: 0 auto;overflow: auto;font-size: 18px;width: 65%;padding-top: 20px;padding-bottom: 20px;text-align:center;display:none;}
 #noticeContainer a {color: blue;font-weight:bold}
 #feedbackFrame{border: 0px;width:400px; height:500px; }
 #feedbackForm {-webkit-overflow-scrolling: touch; overflow: auto;display:none;position:fixed; bottom:0; right:0;background-color:#eee;}
