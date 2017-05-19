@@ -35,7 +35,6 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 #socialDiv{width: 173px; height:30px; margin: 0 auto;line-height:0px;margin-top:10px;}
 .social{float: left;}
 #noticeContainer {margin: 0 auto;overflow: auto;font-size: 18px;width: 65%;padding-top: 20px;padding-bottom: 20px;text-align:center;display:none;}
-#noticeContainer a {color: blue;font-weight:bold}
 #feedbackFrame{border: 0px;width:400px; height:500px; }
 #feedbackForm {-webkit-overflow-scrolling: touch; overflow: auto;display:none;position:fixed; bottom:0; right:0;background-color:#eee;}
 .feedback{ position: fixed; bottom: -2px; right: 25px; background-color:#ededed; border:2px solid #a6a6a6; display:inline-block; color:#777777; font-family:Arial; font-size:16px; font-weight:bold; height:36px; line-height:36px; width:258px; text-decoration:none; text-align:center; text-shadow:0px 0px 0px #ffffff; }
