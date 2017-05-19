@@ -37,7 +37,7 @@
             document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%"><h2>Extratorrent has closed down 😔</h2>There are many alternatives available below<br>Read more about the closure <a href="https://torrentfreak.com/extratorrent-shuts-down-for-good-170517/" title="Extratorrent shuts down" target="_blank">here</a>.</div>';
           }
           else if(domain.match('unblocked')&&!domain.match('extratorrent')||domain.match('pirateproxy')){
-            var domain = domain.replace('http','https');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</div>';
+            var domain = domain.replace('http','https');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
           }
         }
       }
