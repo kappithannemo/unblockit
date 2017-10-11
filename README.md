@@ -2,4 +2,4 @@
 
 View the site on Github at: https://unblocked-pw.github.io
 
-View the live site at: https://unblocked.bid
+View the live site at: https://unblocked.pro
