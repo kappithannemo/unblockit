@@ -33,13 +33,10 @@
       window.onload = function(){
         var domain = getParameterByName('domain');
         if (domain){
-          if(domain.match('extratorrent')){
-            document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%"><h2>Extratorrent has closed down 😔</h2>There are many alternatives available below<br>Read more about the closure <a href="https://torrentfreak.com/extratorrent-shuts-down-for-good-170517/" title="Extratorrent shuts down" target="_blank">here</a>.</div>';
-          }
           if(domain.match('rarbg')){
             document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%"><h2>The Rarbg proxy is currently having issues</h2>We are trying to resolve the issue with the Rarbg admins and are not sure when it will be fixed. In the meantime, try using another site below. Sorry for the inconvenience!</div>';
           }
-          else if(domain.match('unblocked')&&!domain.match('extratorrent')||domain.match('pirateproxy')){
+          else if(domain.match('unblocked')||domain.match('pirateproxy')){
             var domain = domain.replace('http','https');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
           }
           else if(domain.match('unblckd')){
@@ -117,7 +114,7 @@
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://zooqle.unblocked.sh"><img src="ico/zooqle.ico">&nbsp;Zooqle</a></div>
         </div>
         <div class=row>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torrentdownload.unblocked.sh"><img src="ico/torrentdownload.ico">&nbsp;TorrentDownload</a></div>
+          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://extratorrent.unblocked.sh/"><img src="ico/extratorrent.ico">&nbsp;ExtraTorrent</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torrentdownloads.unblocked.sh/"><img src="ico/torrentdownloads.ico">&nbsp;TorrentDownloads</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torrentbit.unblocked.sh"><img src="ico/torrentbit.ico">&nbsp;Torrentbit</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://megafiletube.unblocked.sh"><img src="ico/megafiletube.ico">&nbsp;MegaFileTube</a></div>
@@ -129,9 +126,9 @@
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://magnetdl.unblocked.sh"><img src="ico/magnetdl.ico">&nbsp;MagnetDL</a></div>
         </div>
         <div class=row>
+          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torrentdownload.unblocked.sh"><img src="ico/torrentdownload.ico">&nbsp;TorrentDownload</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yifytorrent.unblocked.sh"><img src="ico/yifytorrent.ico">&nbsp;YifyTorrent</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://seedpeer.unblocked.sh"><img src="ico/seedpeer.ico">&nbsp;Seedpeer</a></div>
-          <!-- --><div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://rarbgmirror.com"><img src="ico/rarbg.ico">&nbsp;RARBG</a></div>
         </div>
 
         <h4 id="streams"><img src="img/play.png"> Streaming Sites <img src="img/play.png"></h4>
