@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unblocked - Access your favourite blocked sites</title>
+    <title>Unblockit - Access your favourite blocked sites</title>
     <meta name="description" content="Unblock your favourite sites such as The Pirate Bay, Kickass torrents, Primewire, etc">
-    <meta name="keywords" content="tpb proxy,thepiratebay proxy,Unblocked,kat proxy,kat,kickass torrents,eztv,uk proxy, proxy list, proxybay">
-    <meta name="apple-mobile-web-app-title" content="Unblocked">
-    <meta name="application-name" content="Unblocked">
-    <meta property="og:title" content="Unblocked - Access your favourite blocked sites" />
+    <meta name="keywords" content="tpb proxy,thepiratebay proxy,Unblockit,Unblocked,kat proxy,kat,kickass torrents,eztv,uk proxy, proxy list, proxybay">
+    <meta name="apple-mobile-web-app-title" content="Unblockit">
+    <meta name="application-name" content="Unblockit">
+    <meta property="og:title" content="Unblockit - Access your favourite blocked sites" />
     <meta property="og:url" content="https://unblockit.ca" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Unblock your favourite sites such as The Pirate Bay, Kickass torrents, Primewire, etc" />
@@ -33,7 +33,7 @@
       window.onload = function(){
         var domain = getParameterByName('domain');
         if (domain){
-          if(domain.match('unblocked')||domain.match('pirateproxy')){
+          if(domain.match('unblockit')||domain.match('pirateproxy')){
             var domain = domain.replace('http','https');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
           }
           else if(domain.match('unblckd')){
@@ -45,7 +45,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="header"><center><img width="560px" height="119px" class="img-responsive" alt="Unblocked" src="img/logo.png"></center>  </div>
+      <div class="header"><center><img width="560px" height="119px" class="img-responsive" alt="Unblockit" src="img/logo.png"></center>  </div>
       <div id="noticeContainer"></div>
       <div id="socialDiv">
         <div style="width:100px" class="social">
