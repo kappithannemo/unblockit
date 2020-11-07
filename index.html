@@ -32,8 +32,13 @@
       }
       window.onload = function(){
         var domain = getParameterByName('domain');
+        var removed = getParameterByName('removed');
         if (domain){
-          if(domain.match('unblockit')||domain.match('unblocked')||domain.match('pirateproxy')){
+          if (removed){
+            var sitename = domain.replace(/https?:\/\//, '').replace(/\..*/,'');
+document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="font-weight:bold">'+sitename.charAt(0).toUpperCase() + sitename.slice(1)+'</span> is no longer available on Unblockit<br><br><span style="font-size:14px">The site was likely shut down and is no longer accessible by our servers<br><strong>Please pick another site below</strong></span></div>';
+          }
+          else if(domain.match('unblockit')||domain.match('unblocked')||domain.match('pirateproxy')){
             var domain = domain.replace('http','https');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
           }
           else if(domain.match('unblckd')){
@@ -112,17 +117,14 @@
         </div>
         <div class=row>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://demonoid.unblockit.app"><img src="ico/demonoid.ico">&nbsp;Demonoid</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://tamilrockers.unblockit.app"><img src="ico/tamilrockers.ico">&nbsp;TamilRockers</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://tamilmv.unblockit.app"><img src="ico/tamilmv.ico">&nbsp;TamilMV</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://btdb.unblockit.app"><img src="ico/btdb.ico">&nbsp;BTDB</a></div>
+          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://oxtorrent.unblockit.app"><img src="ico/oxtorrent.ico">&nbsp;OxTorrent</a></div>
         </div>
         <div class=row>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://oxtorrent.unblockit.app"><img src="ico/oxtorrent.ico">&nbsp;OxTorrent</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://elitetorrent.unblockit.app"><img src="ico/elitetorrent.ico">&nbsp;EliteTorrent</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torrentdownload.unblockit.app"><img src="ico/torrentdownload.ico">&nbsp;TorrentDownload</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://zonatorrent.unblockit.app"><img src="ico/zonatorrent.ico">&nbsp;ZonaTorrent</a></div>
-        </div>
-        <div class=row>
           <!-- --><div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://rarbgproxied.org/index80.php"><img src="ico/rarbg.ico">&nbsp;RARBG</a></div>
         </div>
 
