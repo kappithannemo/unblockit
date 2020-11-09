@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unblockit - Access your favourite blocked sites</title>
+    <title>Unblockit - Proxies to access your favourite blocked sites</title>
     <meta name="description" content="Unblock your favourite sites such as The Pirate Bay, Kickass torrents, Primewire, etc">
     <meta name="keywords" content="tpb proxy,thepiratebay proxy,Unblockit,Unblocked,kat proxy,kat,kickass torrents,eztv,uk proxy, proxy list, proxybay">
     <meta name="apple-mobile-web-app-title" content="Unblockit">
@@ -30,7 +30,7 @@
         results = regex.exec(location.search);
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
       }
-      window.onload = function(){
+      document.onload = function(){
         var domain = getParameterByName('domain');
         var removed = getParameterByName('removed');
         if (domain){
