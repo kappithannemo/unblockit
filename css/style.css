@@ -32,7 +32,7 @@ h4 img {width:24px;height:24px;vertical-align: top;}
 .footer {margin-top: 80px;font-size:18px}
 .footer a {color:#000;}
 .pattern { background: url(/img/pattern.png); position: fixed; height: 100%; width: 100%; top: 0; z-index: -2; }
-#socialDiv{width: 173px; height:30px; margin: 0 auto;line-height:0px;margin-top:10px;}
+#socialDiv{width: 130px; height:30px; margin: 0 auto;line-height:0px;margin-top:10px;}
 .social{float: left;}
 #noticeContainer {margin: 0 auto;overflow: auto;font-size: 18px;width: 65%;padding-top: 20px;padding-bottom: 20px;text-align:center;display:none;}
 #feedbackFrame{border: 0px;width:400px; height:500px; }
