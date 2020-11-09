@@ -20,33 +20,6 @@
     <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript">
-      if(top != self) top.location.replace(location);
-      function openform() {document.getElementById('feedbackForm').style.display='block';document.getElementById('feedbackFrame').src='https://contact.unblockit.app/ubform.php';document.getElementById('feedbackBtn').style.display='none';}
-      function closeform(){document.getElementById('feedbackForm').style.display='none';document.getElementById('feedbackBtn').style.display='block';}
-      function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-      document.onload = function(){
-        var domain = getParameterByName('domain');
-        var removed = getParameterByName('removed');
-        if (domain){
-          if (removed){
-            var sitename = domain.replace(/https?:\/\//, '').replace(/\..*/,'');
-document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="font-weight:bold">'+sitename.charAt(0).toUpperCase() + sitename.slice(1)+'</span> is no longer available on Unblockit<br><br><span style="font-size:14px">The site was likely shut down and is no longer accessible by our servers<br><br><strong>Please pick another site below</strong></span></div>';
-          }
-          else if(domain.match('unblockit')||domain.match('unblocked')||domain.match('pirateproxy')){
-            var domain = domain.replace('http:','https:');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
-          }
-          else if(domain.match('unblckd')){
-            var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
-          }
-        }
-      }
-    </script>
   </head>
   <body>
     <div class="container">
@@ -296,5 +269,30 @@ document.getElementById('noticeContainer').style.display='block';document.getEle
       </div>
     </div> <!--Container-->
     <div class="pattern"></div>
+    <script type="text/javascript">
+      if(top != self) top.location.replace(location);
+      function openform() {document.getElementById('feedbackForm').style.display='block';document.getElementById('feedbackFrame').src='https://contact.unblockit.app/ubform.php';document.getElementById('feedbackBtn').style.display='none';}
+      function closeform(){document.getElementById('feedbackForm').style.display='none';document.getElementById('feedbackBtn').style.display='block';}
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+      var domain = getParameterByName('domain');
+      var removed = getParameterByName('removed');
+      if (domain){
+        if (removed){
+          var sitename = domain.replace(/https?:\/\//, '').replace(/\..*/,'');
+document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="font-weight:bold">'+sitename.charAt(0).toUpperCase() + sitename.slice(1)+'</span> is no longer available on Unblockit<br><br><span style="font-size:14px">The site was likely shut down and is no longer accessible by our servers<br><br><strong>Please pick another site below</strong></span></div>';
+        }
+        else if(domain.match('unblockit')||domain.match('unblocked')||domain.match('pirateproxy')){
+          var domain = domain.replace('http:','https:');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
+        }
+        else if(domain.match('unblckd')){
+          var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
+        }
+      }
+    </script>
   </body>
 </html>
