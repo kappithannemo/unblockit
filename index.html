@@ -137,7 +137,7 @@
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://f2movies.unblockit.app"><img src="ico/f2movies.ico">&nbsp;F2Movies</a></div>
         </div>
         <div class=row>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://scrubtv.unblockit.app"><img src="ico/scrubtv.ico">&nbsp;ScrubTV</a></div>
+          <!-- --><div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://scrubtv.unblockit.app"><img src="ico/scrubtv.ico">&nbsp;ScrubTV</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animeseries.unblockit.app"><img src="ico/animeseries.ico">&nbsp;AnimeSeries</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://uwatchfree.unblockit.app"><img src="ico/uwatchfree.ico">&nbsp;UWatchFree</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://myasiantv.unblockit.app"><img src="ico/myasiantv.ico">&nbsp;MyAsianTV</a></div>
@@ -290,7 +290,7 @@
       if (domain){
         if (removed){
           var sitename = domain.replace(/https?:\/\//, '').replace(/\..*/,'');
-document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="font-weight:bold">'+sitename.charAt(0).toUpperCase() + sitename.slice(1)+'</span> is no longer available on Unblockit<br><br><span style="font-size:14px">The site was likely shut down and is no longer accessible by our servers<br><br><strong>Please pick another site below</strong></span></div>';
+          document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="font-weight:bold">'+sitename.charAt(0).toUpperCase() + sitename.slice(1)+'</span> is no longer available on Unblockit<br><br><span style="font-size:14px">The site was likely shut down and is no longer accessible by our servers<br><br><strong>Please pick another site below</strong></span></div>';
         }
         else if(domain.match('unblockit')||domain.match('unblocked')||domain.match('pirateproxy')){
           var domain = domain.replace('http:','https:');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
