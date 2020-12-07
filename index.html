@@ -54,7 +54,7 @@
       <div class="listrows">
         <h4 id="torrents"><img src="img/utorrent.png"> Torrent Sites <img src="img/utorrent.png"></h4>
         <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://proxybay.kim"><img src="ico/pirateproxy.ico">&nbsp;ThePirateBay</a></div>
+          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://proxybay.buzz"><img src="ico/pirateproxy.ico">&nbsp;ThePirateBay</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://1337x.unblockit.app"><img src="ico/1337x.ico">&nbsp;1337x</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ettv.unblockit.app"><img src="ico/ettv.ico">&nbsp;ETTV</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yts.unblockit.app"><img src="ico/yts.ico">&nbsp;YTS</a></div>
@@ -271,7 +271,7 @@
       <a id="feedbackBtn" class="feedback" onclick="openform()" href="#"><i></i>Feedback / Report a problem</a>
       <div id="feedbackForm"><a href="#" id="closeBtn" onclick="closeform()">X</a><br><iframe id="feedbackFrame" src="about:blank"></iframe></div>
       <div class=footer>
-      <a href="https://unblocked-pw.github.io/" title="Github Mirror" target="_blank">Mirror on Github</a> | <a href="https://proxybay.kim" title="The Proxy Bay" target="_blank">The Proxy Bay</a> | <a href="http://twitter.com/thepirateproxy" title="ThePirateProxy on Twitter" target="_blank">Twitter</a> | <a href="https://torrends.to/" title="Information on torrent sites and unblocking methods" target="_blank">Torrends.to</a>
+      <a href="https://unblocked-pw.github.io/" title="Github Mirror" target="_blank">Mirror on Github</a> | <a href="https://proxybay.buzz" title="The Proxy Bay" target="_blank">The Proxy Bay</a> | <a href="http://twitter.com/thepirateproxy" title="ThePirateProxy on Twitter" target="_blank">Twitter</a> | <a href="https://torrends.to/" title="Information on torrent sites and unblocking methods" target="_blank">Torrends.to</a>
       </div>
     </div> <!--Container-->
     <div class="pattern"></div>
@@ -295,12 +295,12 @@
         else if(domain.match('unblockit')||domain.match('unblocked')||domain.match('pirateproxy')){
           var sitename = domain.replace(/https?:\/\//, '');var btns = document.getElementsByClassName('btn');var rgxp = new RegExp(sitename, "g");
           for (var i=0;i<btns.length;i++){if (btns[i].href.match(rgxp)){sitename = btns[i].innerText.substr(1);}}
-          var domain = domain.replace('http:','https:');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+sitename+'</span> seems to be down (Error '+status+')<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here</a> to try again or pick another site</span></div>';
+          var domain = domain.replace('http:','https:');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+sitename+'</span> seems to be down (Error '+status+')<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here</a> to try again or pick another site below</span></div>';
         }
         else if(domain.match('unblckd')){
           var sitename = domain.replace(/https?:\/\//, '');var btns = document.getElementsByClassName('btn');var rgxp = new RegExp(sitename, "g");
           for (var i=0;i<btns.length;i++){if (btns[i].href.match(rgxp)){sitename = btns[i].innerText.substr(1);}}
-          var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+sitname+'</span> seems to be down (Error '+status+')<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here</a> to try again or pick another site</span></div>';
+          var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+sitname+'</span> seems to be down (Error '+status+')<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here</a> to try again or pick another site below</span></div>';
         }
       }
     </script>
